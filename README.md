@@ -2,6 +2,9 @@ Leap Motion Expirements
 ===========
 This is a playground application to experiment with Leap Motion's [client side Javascript API](https://developer.leapmotion.com/documentation/javascript/api/Leap_Classes.html). The application is a static HTML5, CSS, and Javascript site served up by a NodeJS server. The Javascript files are concatenated and minified by a Grunt task and served up from the public directory. See below for installation instructions.
 
+Here's what it looks like in action:
+![image](http://g.recordit.co/K4rpRkEms1.gif)
+
 Pre-requisites
 ---------------
 - NodeJS
