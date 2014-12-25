@@ -2,13 +2,7 @@ var Screen = (function () {
   var canvas  = document.getElementById("canvas");
   var context = canvas.getContext("2d");
 
-  var drawGrid = function() {
-    drawVerticalGridLines()
-    drawHorizontalGridLines()
-
-    context.strokeStyle = "#eee";
-    context.stroke();
-  }
+  context.fillStyle = '#bdc3c7';
 
   var clearCanvas = function() {
     context.clearRect(0, 0, context.canvas.width, context.canvas.height);
@@ -27,29 +21,13 @@ var Screen = (function () {
     });
   }
 
-  function drawVerticalGridLines() {
-    for (var x = 0; x < context.canvas.width; x += 10) {
-      context.moveTo(x, 0);
-      context.lineTo(x, context.canvas.height);
-    }
-  }
-
-  function drawHorizontalGridLines() {
-    for (var y = 0; y < context.canvas.height; y += 10) {
-      context.moveTo(0, y);
-      context.lineTo(context.canvas.width, y);
-    }
-  }
-
   return {
-    drawGrid: drawGrid,
     clearCanvas: clearCanvas,
     renderFingerTips: renderFingerTips
   }
 })();
 
 Leap.loop({frameEventName: "animationFrame"}, function(frame) {
-  Screen.clearCanvas()
-  Screen.drawGrid()
-  Screen.renderFingerTips(frame)
+  Screen.clearCanvas();
+  Screen.renderFingerTips(frame);
 });
