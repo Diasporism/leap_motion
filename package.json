@@ -14,14 +14,15 @@
   },
   "dependencies": {
     "connect": "~3.3.3",
-    "serve-static": "~1.7.1",
-    "requirejs": "~2.1.15",
+    "express": "~4.10.6",
     "grunt": "~0.4.5",
-    "load-grunt-tasks": "~1.0.0",
-    "grunt-contrib-uglify": "~0.6.0",
-    "grunt-contrib-concat": "~0.5.0",
     "grunt-cli": "~0.1.13",
-    "express": "~4.10.6"
+    "grunt-contrib-concat": "~0.5.0",
+    "grunt-contrib-cssmin": "^0.11.0",
+    "grunt-contrib-uglify": "~0.6.0",
+    "load-grunt-tasks": "~1.0.0",
+    "requirejs": "~2.1.15",
+    "serve-static": "~1.7.1"
   },
   "devDependencies": {}
 }

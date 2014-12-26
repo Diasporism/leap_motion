@@ -40,8 +40,9 @@ aside ul li a {
 
 aside ul li {
     font-weight: 600;
-    margin-left: -40px;
+    margin-left: -30%;
     list-style-type: none;
+    vertical-align: middle;
 }
 
 aside ul li:hover {

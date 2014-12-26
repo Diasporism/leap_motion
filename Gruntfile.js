@@ -20,10 +20,21 @@ module.exports = function(grunt) {
           'public/scripts/<%= pkg.name %>.min.js': ['<%= concat.dist.dest %>']
         }
       }
+    },
+    cssmin: {
+      target: {
+        files: [{
+          expand: true,
+          cwd: 'styles',
+          src: ['*.css', '!*.min.css'],
+          dest: 'public/styles',
+          ext: '.min.css'
+        }]
+      }
     }
   });
 
   require('load-grunt-tasks')(grunt);
 
-  grunt.registerTask('default', ['concat', 'uglify']);
+  grunt.registerTask('default', ['concat', 'uglify', 'cssmin']);
 };
