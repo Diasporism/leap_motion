@@ -7,6 +7,15 @@ a, a:visited {
     color: #676767;
 }
 
+canvas {
+    position: absolute;
+    background-image: url(https://d3gqmx6sr7od7s.cloudfront.net/assets/bg/bg-hero-29c020b871e4aea3cdd3cbbc1f1a2a66.png);
+    height: 100%;
+    width: 80%;
+    float: right;
+    min-width: 800px;
+}
+
 aside {
     position: relative;
     background-color: #303030;
@@ -53,15 +62,6 @@ aside ul li:hover > a {
     color: #bdc3c7;
 }
 
-canvas {
-    position: absolute;
-    background-image: url(https://d3gqmx6sr7od7s.cloudfront.net/assets/bg/bg-hero-29c020b871e4aea3cdd3cbbc1f1a2a66.png);
-    height: 100%;
-    width: 80%;
-    float: right;
-    min-width: 800px;
-}
-
 .instructions {
     padding: 20px;
 }
@@ -79,5 +79,3 @@ canvas {
     margin: 0px;
     width: 100%;
 }
-
-
